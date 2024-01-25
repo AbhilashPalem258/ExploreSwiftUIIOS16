@@ -42,12 +42,12 @@ struct AppIntroOnboarding: View {
         GeometryReader {
             let size = $0.size
             HStack(spacing: 0) {
-                ForEach($vm.items) { $item in
+                ForEach(vm.items) { item in
                     VStack {
                         headerView
                         VStack(spacing: 15) {
                             let offset = -CGFloat(vm.currentIndex) * size.width
-                            ResizableAnimationView(item: $item)
+                            ResizableAnimationView(item: item)
                                 .frame(height: size.width)
                                 .onAppear {
                                     if vm.currentIndex == vm.index(of: item) {
@@ -80,7 +80,7 @@ struct AppIntroOnboarding: View {
             }
             .frame(width: size.width * CGFloat(vm.items.count))
         }
-//        .preferredColorScheme(.light)
+        .preferredColorScheme(.light)
     }
     
     private var headerView: some View {
@@ -160,7 +160,7 @@ struct AppIntroOnboarding: View {
 }
 
 fileprivate struct ResizableAnimationView: UIViewRepresentable {
-    @Binding var item: OnboardingItem
+    var item: OnboardingItem
     func makeUIView(context: Context) -> UIView {
         let view = UIView()
         view.backgroundColor = UIColor.clear

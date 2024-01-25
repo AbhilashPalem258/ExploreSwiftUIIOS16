@@ -125,10 +125,10 @@ struct AnimatedStickyHeader: View {
         .id(products.type)
         .offset("CONTENT_VIEW") { rect in
             let minY = rect.minY
-            
+
             if minY < 30 && -minY < (rect.midY / 2) && selectedCategory != products.type {
                 withAnimation(.easeInOut(duration: 0.3)) {
-                    selectedCategory = minY < 30 && -minY < (rect.midY / 2) && selectedCategory != products.type ? products.type : selectedCategory
+                    selectedCategory = products.type
                 }
             }
         }
@@ -186,7 +186,9 @@ struct AnimatedStickyHeader: View {
                         .onTapGesture {
                             withAnimation(.easeInOut) {
                                 selectedCategory = type
-                                proxy.scrollTo(type, anchor: .topLeading)
+                                DispatchQueue.main.async {
+                                    proxy.scrollTo(type, anchor: .center)
+                                }
                             }
                         }
                         .id(type.tabID)

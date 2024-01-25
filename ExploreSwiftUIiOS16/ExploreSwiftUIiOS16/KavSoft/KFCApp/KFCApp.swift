@@ -59,6 +59,7 @@ struct KFCApp: View {
             .padding(.top, size.height - cardSize)
             .offset(y: offsetY)
             .offset(y: -CGFloat(currentIndex) * cardSize)
+            //https://www.hackingwithswift.com/quick-start/swiftui/how-to-control-the-tappable-area-of-a-view-using-contentshape
             .contentShape(Rectangle())
             .gesture(
                 DragGesture()
@@ -68,6 +69,7 @@ struct KFCApp: View {
                     }
                     .onEnded { value in
                         let translation = value.translation.height
+                        debugPrint("*****Translation Height - \(translation)")
                         
                         withAnimation(.easeInOut) {
                             if translation > 0 {
@@ -90,7 +92,7 @@ struct KFCApp: View {
     }
     
     private var headerView: some View {
-        HStack(spacing: 12) {
+        HStack {
             Button {
                 
             } label: {
@@ -124,7 +126,7 @@ struct KFCApp: View {
                         
                         Text("$ \(toy.price)")
                             .font(.title3)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.secondary)
                     }
                     .frame(width: size.width)
                 }
@@ -145,6 +147,9 @@ fileprivate struct ToyItem: View {
         GeometryReader { proxy in
             let _size = proxy.size
             let offset = proxy.frame(in: .named("SCROLLVIEW")).minY - (size.height - cardSize)
+            let _ = print("""
+                MinY: \(proxy.frame(in: .named("SCROLLVIEW")).minY)
+            """)
             let scale = offset <= 0 ? (offset / maxCardsDisplaySize) : 0
             let reducedScale = 1 + scale
             let currentCardScale = offset / cardSize
@@ -153,10 +158,10 @@ fileprivate struct ToyItem: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: _size.width, height: _size.height)
-                .scaleEffect(reducedScale < 0 ? 0.001 : reducedScale, anchor: UnitPoint(x: 0.5, y: 1 - currentCardScale/3))
+                .scaleEffect(reducedScale < 0 ? 0.001 : reducedScale, anchor: UnitPoint(x: 0.5, y: 1 - currentCardScale))
                 .scaleEffect(offset > 0 ? 1 + currentCardScale : 1, anchor: .top)
-                .offset(y: offset > 0 ? currentCardScale * 200 : 0)
-                .offset(y: currentCardScale * -130.0)
+//                .offset(y: offset > 0 ? currentCardScale * 200 : 0)
+//                .offset(y: currentCardScale * -130.0)
         }
         .frame(height: size.width)
     }

@@ -104,6 +104,30 @@ struct ToolBarBootcamp: View {
                         }
                     }
                 }
+//                .toolbar(.hidden, for: .navigationBar)
+//                .toolbarBackground(.hidden, for: .navigationBar)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(.black.opacity(0.4))
+                .toolbarColorScheme(.dark, for: .navigationBar)
+                .toolbarTitleMenu {
+                    Button {
+                        
+                    } label: {
+                        Text("Item #1")
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Item #2")
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Item #3")
+                    }
+                }
             }
             .blur(radius: isAdding ? 10 : 0)
             if isAdding {
@@ -137,7 +161,7 @@ fileprivate struct NewFruitView: View {
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                             TextField("Emoji", text: $emoji)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .frame(width: 75)
+//                                .frame(width: 75)
                             Text("Add a new fruit")
                                 .foregroundColor(.gray)
                             Spacer()
@@ -164,8 +188,8 @@ fileprivate struct NewFruitView: View {
                             }
                             .bold()
                             .tint(.red)
-        //                    .buttonStyle(.borderedProminent)
-                            .buttonStyle(.borderless)
+                            .buttonStyle(.borderedProminent)
+//                            .buttonStyle(.borderless)
                         }
                         .padding()
                     }

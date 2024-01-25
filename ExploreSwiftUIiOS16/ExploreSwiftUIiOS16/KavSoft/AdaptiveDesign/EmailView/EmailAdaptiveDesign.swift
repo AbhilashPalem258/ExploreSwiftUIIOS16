@@ -59,6 +59,7 @@ fileprivate struct SideBarView: View {
             Color("LightWhite")
                 .ignoresSafeArea()
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     private func SideBarItem(tab: Tab) -> some View {

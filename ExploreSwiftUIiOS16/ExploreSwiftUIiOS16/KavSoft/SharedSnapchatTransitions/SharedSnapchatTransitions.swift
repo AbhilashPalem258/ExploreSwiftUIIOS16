@@ -210,8 +210,9 @@ fileprivate struct DetailView: View {
                     .rotationEffect(.init(degrees: -90))
             }
             .foregroundColor(.white)
-            .frame(maxHeight: .infinity, alignment: .top)
             .opacity(isDragging ? 0 : 1)
+            
+            Spacer(minLength: 0)
             
             Button {
                 

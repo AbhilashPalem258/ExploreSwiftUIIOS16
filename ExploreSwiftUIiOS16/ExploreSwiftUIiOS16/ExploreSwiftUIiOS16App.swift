@@ -11,7 +11,11 @@ import SwiftUI
 struct ExploreSwiftUIiOS16App: App {
     var body: some Scene {
         WindowGroup {
-            NavSplitViewBootcamp()
+            if #available(iOS 17.0, *) {
+                ObservationBootcampObjc()
+            } else {
+                AnyLayoutBasic()
+            }
         }
     }
 }

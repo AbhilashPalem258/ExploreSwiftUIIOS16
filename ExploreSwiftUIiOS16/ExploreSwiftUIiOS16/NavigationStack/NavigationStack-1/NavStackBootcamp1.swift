@@ -25,6 +25,9 @@ import SwiftUI
      }
  - One more issue with NavigationView is that we have specifically code navigation style as stack
  
+ Limitations of NavigationView:
+ - NavigationLink allows us to push forward one screen and one screen only, So i can go to next screen but i cant go to screen three four, i cant push multiple screens at the same time. Navigation Stack we are going to be allowed to do that. The probably biggeer and most important thing that navigation stack allows to do that is have basically lazy loading on these secondary screens.
+ 
  */
 struct NavStackBootcamp1: View {
     var body: some View {
@@ -114,7 +117,7 @@ fileprivate struct IntroView: View {
     }
     
     var body: some View {
-        usingNavStack
+        usingNavView
     }
 }
 

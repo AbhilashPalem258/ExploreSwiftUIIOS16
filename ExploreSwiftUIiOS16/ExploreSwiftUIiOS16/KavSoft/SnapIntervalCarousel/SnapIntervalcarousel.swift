@@ -97,7 +97,7 @@ fileprivate class ViewModel: ObservableObject {
 
 struct SnapIntervalcarousel: View {
     
-    @StateObject fileprivate var vm = ViewModel()
+    @StateObject private var vm = ViewModel()
     @State private var selectedIndex = 0
     
     var body: some View {
@@ -116,6 +116,7 @@ struct SnapIntervalcarousel: View {
                                 .foregroundColor(.gray)
                         }
                     }
+                    .padding(.horizontal)
                 
                 GeometryReader {
                     let size = $0.size
@@ -148,7 +149,7 @@ struct SnapIntervalcarousel: View {
                                 .frame(width: pageWidth)
                             }
                         }
-                        .padding(.horizontal, (size.width - pageWidth)/2)
+                        .padding(.horizontal, pageWidth)
                         .background {
                             SnapCarouselHelper(pageWidth: pageWidth, count: vm.images.count, selectedIndex: $vm.selectedIndex)
                         }
@@ -220,7 +221,7 @@ fileprivate struct SnapCarouselHelper: UIViewRepresentable {
             
             parent.selectedIndex = min(max(Int(pageIndex), 0), count - 1)
             
-            targetContentOffset.pointee.x = pageIndex * parent.pageWidth
+            targetContentOffset.pointee.x = pageIndex * pageWidth
         }
     }
 }

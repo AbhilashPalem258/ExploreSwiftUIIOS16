@@ -40,6 +40,7 @@ struct AnyLayoutBasic: View {
                         .cornerRadius(10)
                 }
             }
+            .background(.brown)
 //            .animation(.default, value: changeLayout)
             .animation(.default, value: layoutType)
             .navigationTitle("AnyLayout")
@@ -138,6 +139,24 @@ fileprivate struct AlternateLayout: Layout {
             
             y += subviewSize.height
         }
+    }
+    
+    func explicitAlignment(of guide: HorizontalAlignment, in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGFloat? {
+        if guide == .leading {
+            return bounds.minX + 30
+        }
+        return nil
+    }
+    
+    func explicitAlignment(of guide: VerticalAlignment, in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGFloat? {
+        if guide == .bottom {
+            return bounds.minY + 30
+        }
+        return nil
+    }
+    
+    func spacing(subviews: Subviews, cache: inout ()) -> ViewSpacing {
+        ViewSpacing()
     }
 }
 

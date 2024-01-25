@@ -33,6 +33,7 @@ struct SpotifyAnimatedStickyHeader: View {
             let size = $0.size
             
             contentView(safeArea: safeArea, size: size)
+            //https://swiftwithmajid.com/2021/11/03/managing-safe-area-in-swiftui/
                 .ignoresSafeArea(.container, edges: .top)
                 .preferredColorScheme(.dark)
         }
@@ -43,6 +44,7 @@ struct SpotifyAnimatedStickyHeader: View {
             VStack {
                 artwork(safeArea: safeArea, size: size)
                 shuffleBtn
+//                    .offset(y: -35)
                     .padding(.top, -35)
                 albumsView
             }
@@ -84,7 +86,7 @@ struct SpotifyAnimatedStickyHeader: View {
                 }
             }
             .offset(y: -minY)
-            .padding([.bottom, .horizontal], 15)
+            .padding([.horizontal], 15)
             .padding(.top, safeArea.top + 10)
         }
     }
@@ -152,7 +154,7 @@ struct SpotifyAnimatedStickyHeader: View {
                         .fill(Color("Green").gradient)
                 }
         }
-        .frame(maxWidth: .infinity)
+//        .frame(maxWidth: .infinity)
     }
     
     private var albumsView: some View {
@@ -175,6 +177,8 @@ struct SpotifyAnimatedStickyHeader: View {
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
+                    
+//                    Spacer(minLength: 0)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Button {

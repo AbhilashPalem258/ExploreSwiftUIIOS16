@@ -20,8 +20,7 @@ fileprivate class ViewModel: ObservableObject {
     @Published var path = [Color]()
     
     func navigateToSomeScreen() {
-        path.append(.gray)
-        path.append(.cyan)
+        path.append(contentsOf: [.green, .gray])
     }
     
     func navigateToRoot() {

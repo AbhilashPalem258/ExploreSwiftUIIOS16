@@ -15,12 +15,14 @@
 		D50774D029694E2100C855CB /* NavStackBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50774CF29694E2100C855CB /* NavStackBootcamp2.swift */; };
 		D50774D229694E5900C855CB /* NavSplitViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50774D129694E5900C855CB /* NavSplitViewBootcamp.swift */; };
 		D50774D42969A33700C855CB /* NavStackPathBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50774D32969A33700C855CB /* NavStackPathBootcamp.swift */; };
+		D51C847A2AA7AF3500F8F60E /* InstagramProfileStickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C84792AA7AF3500F8F60E /* InstagramProfileStickyHeader.swift */; };
 		D53D3E64297E9B7A00668626 /* ToolBarBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53D3E63297E9B7A00668626 /* ToolBarBootcamp.swift */; };
 		D54D32392969CCED00C72386 /* CountryCityModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D32382969CCED00C72386 /* CountryCityModels.swift */; };
 		D54D323C296A70F400C72386 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D323B296A70F400C72386 /* Router.swift */; };
 		D54D323F296A73F200C72386 /* NominalChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D323E296A73F200C72386 /* NominalChartExample.swift */; };
 		D54D3242296AF3C500C72386 /* PhotosPickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D3241296AF3C500C72386 /* PhotosPickerBootcamp.swift */; };
 		D54D3245296B3BCD00C72386 /* GridBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D3244296B3BCD00C72386 /* GridBasic.swift */; };
+		D55545342A93F9CB00D1AF81 /* AnimatedCustomButtonBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55545332A93F9CB00D1AF81 /* AnimatedCustomButtonBootcamp.swift */; };
 		D5682E2C296D09CC006CAC5D /* GaugeBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E2B296D09CC006CAC5D /* GaugeBasic.swift */; };
 		D5682E32296EF9E6006CAC5D /* AnyLayoutBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E31296EF9E6006CAC5D /* AnyLayoutBasic.swift */; };
 		D5682E34296FDDC5006CAC5D /* EnumBasedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E33296FDDC5006CAC5D /* EnumBasedNavigation.swift */; };
@@ -28,6 +30,8 @@
 		D5682E3A29713C54006CAC5D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E3929713C54006CAC5D /* City.swift */; };
 		D5682E3D2973C170006CAC5D /* ViewThatFitsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E3C2973C170006CAC5D /* ViewThatFitsDemo.swift */; };
 		D5682E4029750D1C006CAC5D /* ColorschemeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5682E3F29750D1B006CAC5D /* ColorschemeDemo.swift */; };
+		D5AACA7D2B13ABB700BA4130 /* SwiftDataNotes.swift in Resources */ = {isa = PBXBuildFile; fileRef = D5AACA7C2B13ABB700BA4130 /* SwiftDataNotes.swift */; };
+		D5ABC34D2B1A9F2800A6DA32 /* ObservationBootcampObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ABC34C2B1A9F2800A6DA32 /* ObservationBootcampObjc.swift */; };
 		D5B211C3297556230010B1F3 /* EnvVariablesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B211C2297556230010B1F3 /* EnvVariablesBootcamp.swift */; };
 		D5CF72E129A36B8700F1A18B /* AnimatedStickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF72E029A36B8700F1A18B /* AnimatedStickyHeader.swift */; };
 		D5CF72E429A3DF3500F1A18B /* SnapIntervalcarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF72E329A3DF3500F1A18B /* SnapIntervalcarousel.swift */; };
@@ -62,12 +66,15 @@
 		D50774CF29694E2100C855CB /* NavStackBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackBootcamp2.swift; sourceTree = "<group>"; };
 		D50774D129694E5900C855CB /* NavSplitViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSplitViewBootcamp.swift; sourceTree = "<group>"; };
 		D50774D32969A33700C855CB /* NavStackPathBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackPathBootcamp.swift; sourceTree = "<group>"; };
+		D51C84772A9EB14100F8F60E /* DesignNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DesignNotes.md; sourceTree = "<group>"; };
+		D51C84792AA7AF3500F8F60E /* InstagramProfileStickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramProfileStickyHeader.swift; sourceTree = "<group>"; };
 		D53D3E63297E9B7A00668626 /* ToolBarBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarBootcamp.swift; sourceTree = "<group>"; };
 		D54D32382969CCED00C72386 /* CountryCityModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCityModels.swift; sourceTree = "<group>"; };
 		D54D323B296A70F400C72386 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D54D323E296A73F200C72386 /* NominalChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalChartExample.swift; sourceTree = "<group>"; };
 		D54D3241296AF3C500C72386 /* PhotosPickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerBootcamp.swift; sourceTree = "<group>"; };
 		D54D3244296B3BCD00C72386 /* GridBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBasic.swift; sourceTree = "<group>"; };
+		D55545332A93F9CB00D1AF81 /* AnimatedCustomButtonBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCustomButtonBootcamp.swift; sourceTree = "<group>"; };
 		D5682E2B296D09CC006CAC5D /* GaugeBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeBasic.swift; sourceTree = "<group>"; };
 		D5682E31296EF9E6006CAC5D /* AnyLayoutBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLayoutBasic.swift; sourceTree = "<group>"; };
 		D5682E33296FDDC5006CAC5D /* EnumBasedNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedNavigation.swift; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		D5682E3929713C54006CAC5D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		D5682E3C2973C170006CAC5D /* ViewThatFitsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsDemo.swift; sourceTree = "<group>"; };
 		D5682E3F29750D1B006CAC5D /* ColorschemeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorschemeDemo.swift; sourceTree = "<group>"; };
+		D5AACA7C2B13ABB700BA4130 /* SwiftDataNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataNotes.swift; sourceTree = "<group>"; };
+		D5ABC34C2B1A9F2800A6DA32 /* ObservationBootcampObjc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationBootcampObjc.swift; sourceTree = "<group>"; };
 		D5B211C2297556230010B1F3 /* EnvVariablesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvVariablesBootcamp.swift; sourceTree = "<group>"; };
 		D5CF72E029A36B8700F1A18B /* AnimatedStickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStickyHeader.swift; sourceTree = "<group>"; };
 		D5CF72E329A3DF3500F1A18B /* SnapIntervalcarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapIntervalcarousel.swift; sourceTree = "<group>"; };
@@ -129,6 +138,8 @@
 		D50774B929694C9100C855CB /* ExploreSwiftUIiOS16 */ = {
 			isa = PBXGroup;
 			children = (
+				D5ABC34A2B1A9F0200A6DA32 /* iOS 17 */,
+				D5AACA7B2B13AB7B00BA4130 /* SwiftData */,
 				D5CF72DE29A36B6800F1A18B /* KavSoft */,
 				D53D3E62297E9B6900668626 /* ToolBar */,
 				D5B211C1297555D10010B1F3 /* EnvironmentVariables */,
@@ -203,6 +214,22 @@
 			path = NavigationSplitView;
 			sourceTree = "<group>";
 		};
+		D51C84712A9EAFB100F8F60E /* SwiftUIDynamicSheetHeight */ = {
+			isa = PBXGroup;
+			children = (
+				D51C84772A9EB14100F8F60E /* DesignNotes.md */,
+			);
+			path = SwiftUIDynamicSheetHeight;
+			sourceTree = "<group>";
+		};
+		D51C84782AA7AF1600F8F60E /* ComplexUI */ = {
+			isa = PBXGroup;
+			children = (
+				D51C84792AA7AF3500F8F60E /* InstagramProfileStickyHeader.swift */,
+			);
+			path = ComplexUI;
+			sourceTree = "<group>";
+		};
 		D53D3E62297E9B6900668626 /* ToolBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +276,14 @@
 				D54D3244296B3BCD00C72386 /* GridBasic.swift */,
 			);
 			path = Grid;
+			sourceTree = "<group>";
+		};
+		D55545322A93F99D00D1AF81 /* AnimatedCustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				D55545332A93F9CB00D1AF81 /* AnimatedCustomButtonBootcamp.swift */,
+			);
+			path = AnimatedCustomButton;
 			sourceTree = "<group>";
 		};
 		D5682E2A296D0996006CAC5D /* Gauge */ = {
@@ -300,6 +335,30 @@
 			path = ColorScheme;
 			sourceTree = "<group>";
 		};
+		D5AACA7B2B13AB7B00BA4130 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				D5AACA7C2B13ABB700BA4130 /* SwiftDataNotes.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		D5ABC34A2B1A9F0200A6DA32 /* iOS 17 */ = {
+			isa = PBXGroup;
+			children = (
+				D5ABC34B2B1A9F0A00A6DA32 /* Observation */,
+			);
+			path = "iOS 17";
+			sourceTree = "<group>";
+		};
+		D5ABC34B2B1A9F0A00A6DA32 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				D5ABC34C2B1A9F2800A6DA32 /* ObservationBootcampObjc.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
 		D5B211C1297555D10010B1F3 /* EnvironmentVariables */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +370,9 @@
 		D5CF72DE29A36B6800F1A18B /* KavSoft */ = {
 			isa = PBXGroup;
 			children = (
+				D51C84782AA7AF1600F8F60E /* ComplexUI */,
+				D51C84712A9EAFB100F8F60E /* SwiftUIDynamicSheetHeight */,
+				D55545322A93F99D00D1AF81 /* AnimatedCustomButton */,
 				D5E1B20C29ACA8F6009B6083 /* KFCApp */,
 				D5E1B20629AB68FA009B6083 /* AdaptiveDesign */,
 				D5E1B20329AA3B94009B6083 /* SpotifyAnimatedStickyHeader */,
@@ -487,6 +549,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AACA7D2B13ABB700BA4130 /* SwiftDataNotes.swift in Resources */,
 				D50774C229694C9400C855CB /* Preview Assets.xcassets in Resources */,
 				D5E338D229A72F5000F6D089 /* order_delivery.json in Resources */,
 				D5E1B21029ACA9DE009B6083 /* TeddyApp.xcassets in Resources */,
@@ -521,6 +584,7 @@
 				D50774CE29694D9200C855CB /* NavStackBootcamp1.swift in Sources */,
 				D54D3242296AF3C500C72386 /* PhotosPickerBootcamp.swift in Sources */,
 				D5682E34296FDDC5006CAC5D /* EnumBasedNavigation.swift in Sources */,
+				D51C847A2AA7AF3500F8F60E /* InstagramProfileStickyHeader.swift in Sources */,
 				D5CF72E429A3DF3500F1A18B /* SnapIntervalcarousel.swift in Sources */,
 				D5682E2C296D09CC006CAC5D /* GaugeBasic.swift in Sources */,
 				D5682E4029750D1C006CAC5D /* ColorschemeDemo.swift in Sources */,
@@ -535,9 +599,11 @@
 				D5E338D529A7315900F6D089 /* AppIntroOnboarding.swift in Sources */,
 				D5CF72E729A4E08100F1A18B /* MGEBetweenFullScreenCover.swift in Sources */,
 				D5E1B20E29ACA908009B6083 /* KFCApp.swift in Sources */,
+				D5ABC34D2B1A9F2800A6DA32 /* ObservationBootcampObjc.swift in Sources */,
 				D5682E3A29713C54006CAC5D /* City.swift in Sources */,
 				D5B211C3297556230010B1F3 /* EnvVariablesBootcamp.swift in Sources */,
 				D5682E3729713B58006CAC5D /* TablesBootcamp.swift in Sources */,
+				D55545342A93F9CB00D1AF81 /* AnimatedCustomButtonBootcamp.swift in Sources */,
 				D5E1B20529AA3BB0009B6083 /* SpotifyAnimatedStickyHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
